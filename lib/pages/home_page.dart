@@ -10,14 +10,19 @@ class HomePage extends StatelessWidget {
     final name = "codepur";
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Catalog App"),
+        // backgroundColor: Colors.white,
+        // elevation: 0.0,
+        // iconTheme: IconThemeData(color: Colors.black),
+        title: const Text(
+          "Catalog App",
+          // style: TextStyle(color: Colors.black),
+        ),
       ),
-        body: Center(
-            child: Container(
-      child: Text("Welcome to $days days Tutorial by $name "),
-    )),
-    drawer: MyDrawer(),
+      body: Center(
+          child: Container(
+        child: Text("Welcome to $days days Tutorial by $name "),
+      )),
+      drawer: MyDrawer(),
     );
   }
-} 
-  
+}
